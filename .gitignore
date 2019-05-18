@@ -1,0 +1,14 @@
+# Exercism
+.exercism/
+
+# IntelliJ
+.idea/
+build/
+out/
+
+# Gradle
+.gradle/
+
+# Go
+go/bin/
+go/src/

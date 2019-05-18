@@ -1,0 +1,25 @@
+=== RUN   TestTallyHappy
+Allegoric Alaskians;Blithering Badgers;win [Allegoric Alaskians Blithering Badgers win] Allegoric Alaskians Blithering Badgers win
+Devastating Donkeys;Courageous Californians;draw [Devastating Donkeys Courageous Californians draw] Devastating Donkeys Courageous Californians draw
+Devastating Donkeys;Allegoric Alaskians;win [Devastating Donkeys Allegoric Alaskians win] Devastating Donkeys Allegoric Alaskians win
+Courageous Californians;Blithering Badgers;loss [Courageous Californians Blithering Badgers loss] Courageous Californians Blithering Badgers loss
+Blithering Badgers;Devastating Donkeys;loss [Blithering Badgers Devastating Donkeys loss] Blithering Badgers Devastating Donkeys loss
+Allegoric Alaskians;Courageous Californians;win [Allegoric Alaskians Courageous Californians win] Allegoric Alaskians Courageous Californians win
+0xc000070330
+--- FAIL: TestTallyHappy (0.00s)
+    tournament_test.go:120: Tally for input named "good" was expected to return...
+        Team                           | MP |  W |  D |  L |  P
+        Devastating Donkeys            |  3 |  2 |  1 |  0 |  7
+        Allegoric Alaskians            |  3 |  2 |  0 |  1 |  6
+        Blithering Badgers             |  3 |  1 |  0 |  2 |  3
+        Courageous Californians        |  3 |  0 |  1 |  2 |  1
+        
+        ...but returned...
+=== RUN   TestTallyError
+Bla;Bla;Bla [Bla Bla Bla] Bla Bla Bla
+0xc0000c6150
+--- FAIL: TestTallyError (0.00s)
+    tournament_test.go:132: Tally for input "Bla;Bla;Bla" should have failed but didn't.
+FAIL
+exit status 1
+FAIL	_/Users/mwinter/Exercism/go/tournament	0.010s
